@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-//Componente: 
-//Propriedade: Informações que um componente PAI pasa par ao componemte FILHO
-//Estado: Informações mantidas pelo componente (Lembrar: imutabilidade) 
+import './global.css'
+import './App.css'
 
 function App() {
-  const [counter, setCounter] = useState(0);
-
-  function incrementCounter() {
-    setCounter(counter + 1)
-  }
-
+ 
   return (
-    <>
-      <h1>Contador: {counter}</h1>
-      <button onClick={incrementCounter}>Incrementar</button>
-    </>
+<div id="app">
+  <aside> 
+    <strong>Cadastrar</strong>
+    <form>
+      <label htmlFor="username_github">Usuário do Github</label>
+      <input name="github_username" id="username_github" required/>
+    </form>
+  </aside>
+  <main>
+
+  </main>
+</div>
+
   );
 }
 
