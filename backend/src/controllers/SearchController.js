@@ -2,7 +2,7 @@ const Dev = require('../models/Dev')
 const parseStringAsArray = require('../utils/parseStringAsArray')
 module.exports = {
     async index(req, res) {
-        //Buscar todos os devs em um raio de 10km
+        //Buscar todos os devs em um raio de 10km 
         //Filtrar por tech
         const { latitude, longitude, techs } = req.query
         const techsArray = parseStringAsArray(techs)
