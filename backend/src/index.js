@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const routes = require('./routes')
 
 const app = express()
-const port = 3000
+const port = 3333
 
 mongoose.connect('mongodb+srv://omnistack10:qCftP7LNNYkR2FwY@cluster0-knsrs.gcp.mongodb.net/week10?retryWrites=true&w=majority', {
     useNewUrlParser: true,
