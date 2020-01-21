@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const routes = require('./routes')
+const cors = require('cors')
 
 const app = express()
 const port = 3333
@@ -10,6 +11,7 @@ mongoose.connect('mongodb+srv://omnistack10:qCftP7LNNYkR2FwY@cluster0-knsrs.gcp.
     useUnifiedTopology: true
 })
 
+app.use(cors())
 app.use(express.json()) //Forma de avisar o node/express para utilizar Json nos req e res
 app.use(routes);
 
